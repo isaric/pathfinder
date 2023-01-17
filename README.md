@@ -14,6 +14,20 @@ and running a Java Maven application or use your favorite IDE to do it for you.
 The application has some basic integration tests to make sure the core functionality
 is working.
 
+### API usage
+
+The application exposes a single endpoint. The "origin" and "destination" varibles
+are three-letter strings representing the country codes. In case no route is possible
+or the string constraints are not respected the API will return status 400. The response
+payload in case of success if a list of all three-letter country codes from the origin
+country to the destination country.
+
+    GET /routes/{origin}/{destination} HTTP 200,400
+
+    { 
+       "route" : ["HRV", "SLO", "AUT"] 
+    }
+
 ### Implementation notes
 
 The country data is a JSON file that is ingested at application startup. The application
