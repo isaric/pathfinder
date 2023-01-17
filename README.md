@@ -1,5 +1,7 @@
 ## PATHFINDER
 
+[![Java CI with Maven](https://github.com/isaric/pathfinder/actions/workflows/maven.yml/badge.svg?branch=master)](https://github.com/isaric/pathfinder/actions/workflows/maven.yml)
+
 This is a simple Spring Boot REST application that will calculate the number of
 border crossings (hops) needed to get from the origin country to the destination
 country if a land route exists. It does not take into account the size of a 
