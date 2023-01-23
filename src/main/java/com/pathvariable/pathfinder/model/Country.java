@@ -8,7 +8,6 @@ public class Country {
 
     private String code;
 
-    private List<Country> neighbors;
 
     public String getName() {
         return name;
@@ -26,11 +25,4 @@ public class Country {
         this.code = code;
     }
 
-    public List<Country> getNeighbors() {
-        return neighbors;
-    }
-
-    public void setNeighbors(List<Country> neighbors) {
-        this.neighbors = neighbors;
-    }
 }
